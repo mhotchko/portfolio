@@ -1,5 +1,8 @@
 <html>
 <style>
+    * {
+  box-sizing: border-box;
+}
 body {
     background-image: url('https://64.media.tumblr.com/89c03a130407633b3cf6991c93c1bac8/31d1f7954b094cf4-91/s640x960/278b246099e4311d7701fbbd4c8aa3369bb97872.jpg') 
 }
@@ -9,10 +12,49 @@ p {
     color:#D1C9B5;
 }
 
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  background: #00000f;
+  padding: 20px;
+  border-style: double double solid solid;
+  border-color: yellowgreen;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: right;
+  padding: 20px;
+  width: 70%;
+ 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+*/
 
 </style>
+<body>
 
-<p class="p">this is my website yaaaayyyyy</p>
+    <p class="p">this is my website yaaaayyyyy</p>
+<section>
+
+<nav>
 
 <a href="pages/arachniradio/"><p>ARACHNIRADIO</p></a>
 
@@ -28,12 +70,15 @@ p {
 
 <a href="pages/autopanHeadphones/"><p>AUTOPAN</p></a>
 
+</nav>
+
+<article>
+    <img src="https://64.media.tumblr.com/64a9068db59a3ccad59e223022fb5b9a/4665e47cc16c61d2-11/s1280x1920/50c2cd566651774e0b471bf48b0d3ce77edfc674.pnj" alt="inverts">
+</article>
+</section>
 
 
 
 
-
-
-
-
+</body>
 </html>
