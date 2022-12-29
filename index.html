@@ -15,11 +15,14 @@ p {
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 30%;
+  width: 20%;
   background: #00000f;
   padding: 20px;
   border-style: double double solid solid;
   border-color: yellowgreen;
+ 
+  height:750px;
+  opacity:70%;
 }
 
 /* Style the list inside the menu */
@@ -29,10 +32,14 @@ nav ul {
 }
 
 article {
-  float: right;
-  padding: 20px;
-  width: 70%;
- 
+  float: left;
+  background-size:100% 100%;
+  width:80%;
+  height:750px;
+  max-height:750px;
+  border-style: double double solid solid;
+  border-color: yellowgreen;
+  background-image: url('https://64.media.tumblr.com/64a9068db59a3ccad59e223022fb5b9a/4665e47cc16c61d2-11/s1280x1920/50c2cd566651774e0b471bf48b0d3ce77edfc674.pnj');
 }
 
 /* Clear floats after the columns */
@@ -41,19 +48,26 @@ section::after {
   display: table;
   clear: both;
 }
-/*@media (max-width: 600px) {
+
+.link-section{
+  max-height: 800px;
+  width:100%;
+}
+@media (max-width: 600px) {
   nav, article {
     width: 100%;
     height: auto;
   }
-*/
 
+}
 </style>
+
 <body>
 
     <p class="p">this is my website yaaaayyyyy</p>
-<section>
 
+
+<div class="link-section">
 <nav>
 
 <a href="pages/arachniradio/"><p>ARACHNIRADIO</p></a>
@@ -73,12 +87,17 @@ section::after {
 </nav>
 
 <article>
-    <img src="https://64.media.tumblr.com/64a9068db59a3ccad59e223022fb5b9a/4665e47cc16c61d2-11/s1280x1920/50c2cd566651774e0b471bf48b0d3ce77edfc674.pnj" alt="inverts">
+    
 </article>
+</div>
+
+<section>
 </section>
 
 
 
 
+
 </body>
+
 </html>
